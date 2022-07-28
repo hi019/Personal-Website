@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{% static 'content/styles.css' %}" rel="stylesheet">
+        <link rel="shortcut icon" href="{% static 'content/favicon.png' %}">
+        <script src="{% static 'content/navigation.js' %}"></script>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Amaan Javed</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Me</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
