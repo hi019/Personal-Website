@@ -1,0 +1,242 @@
+{% extends "content/layout.html" %}
+{% load static %}
+
+
+{% block body %}
+<div class="flex-parent jc-center">
+    <button type="button" class="btn btn-danger btn-lg btn-floating" id="resume_download">
+        <a href="{% static 'content/Amaan_Javed_resume.pdf'%}" download="Amaan_Javed_resume.pdf" id="resume_pdf" style="color: #FFFFFF; text-decoration: none;">
+        <i class="fa-solid fa-file-pdf fa-1x"></i>  Download Resume
+        </a>
+    </button>
+</div>
+
+<div class="container-fluid" style="margin-top: 0px;">
+    <div>
+      <div class="col">
+        <div id="education" class="container py-5">
+            <div class="section_heading">Education</div>
+            <div class="main-timeline-4 text-white">
+            <div class="timeline-4 left-4">
+                <div class="card gradient-custom">
+                <div class="card-body p-4">
+                    <i class="fa-solid fa-book-open fa-2x"></i>
+                    <h4>Queen's University Bachelor's of Computing Degree</h4>
+                    <p class="small text-white-50 mb-4">2022 - Present</p>
+                    <div class="resume"> 
+                        <ul style="list-style-type:disc">
+                            <li>Queen's University Principal's Scholarship</li>
+                            <li>Expected Date Of Completion: April 2026</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="bold">
+                <h6></h6>
+                <h6>January 2022-Present</h6>
+                <br>
+                <ul style="list-style-type:disc">
+                    <li>Expected Date Of Completion: July 2022</li>
+                </ul>
+            </div>
+            <div class="timeline-4 right-4">
+                <div class="card gradient-custom-4">
+                <div class="card-body p-4">
+                    <i class="fa-brands fa-html5 fa-2x"></i>
+                    <h4>HarvardX's Computer Science For Web Programming Professional Certificate</h4>
+                    <p class="small text-white-50 mb-4">February - August 2022</p>
+                    <div class="resume">
+                        <ul style="list-style-type:disc">
+                            <li>Courses: CS50 and CS50's Web Programming With Python and Javascript</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.edx.org/professional-certificate/harvardx-computer-science-for-web-programming"><h6 class="badge bg-light text-black mb-0">View Certificate</h6></a>
+                </div>
+                </div>
+            </div>
+            <div class="timeline-4 left-4">
+                <div class="card gradient-custom">
+                <div class="card-body p-4">
+                    <i class="fa-solid fa-school fa-2x"></i>
+                    <h4>Mentor College - High School Division</h4>
+                    <p class="small text-white-50 mb-4">2018 - 2022</p>
+                </div>
+                </div>
+            </div>
+            <div class="timeline-4 right-4">
+                <div class="card gradient-custom-4">
+                <div class="card-body p-4">
+                    <i class="fa-solid fa-calculator fa-2x"></i>
+                    <h4>Kumon Math and Reading Program</h4>
+                    <p class="small text-white-50 mb-4">2011 - 2021</p>
+                </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <div id="experience" class="container py-5">
+        <div class="section_heading">Experience</div>
+        <div class="main-timeline-4 text-white">
+        <div class="timeline-4 right-4">
+            <div class="card gradient-custom">
+            <div class="card-body p-4">
+                <i class="fa-solid fa-briefcase fa-2x"></i>
+                <h4>Kumon - Centre Assistant</h4>
+                <p class="small text-white-50 mb-4">August 2021 - Present</p>
+                <div class="resume"> 
+                    <ul style="list-style-type:disc">
+                        <li>Teach basic math, algebra, trignometry, calculus and statistics concepts to students.</li>
+                        <li>Respond to student's questions.</li>
+                        <li>Mark student assignments and provide feedback.</li>
+                        <li>Monitor student progress and enter marks into database system.</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="timeline-4 left-4">
+            <div class="card gradient-custom-4">
+            <div class="card-body p-4">
+                <i class="fa-solid fa-money-bill-trend-up fa-2x"></i>
+                <h4>Desjardins Investments Inc. - Administrative Assistant</h4>
+                <p class="small text-white-50 mb-4">July 2021 - Present</p>
+                <div class="resume">
+                    <ul style="list-style-type:disc">
+                        <li>Generate potential business leads using CRM software's and LinkedIn Sales Navigator</li>
+                        <li>Create social media content to promote the advisor's business.</li>
+                        <li>Organize client events/seminars.</li>
+                        <li>Set-up new client accounts in the system and execute trade orders.</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="hackathons" class="container py-5">
+        <div class="section_heading">Hackathons</div>
+        <div class="main-timeline-4 text-white">
+        <div class="timeline-4 left-4">
+        <div class="card gradient-custom-4">
+        <div class="card-body p-4">
+            <i class="fa-solid fa-laptop-code fa-2x"></i>
+            <h4>The Queen's School of Computing Programming Challenge - Mentor</h4>
+            <p class="small text-white-50 mb-4">July 2022 - August 2022</p>
+            <div class="resume">
+                <ul style="list-style-type:disc">
+                    <li>Provided feedback and technical support to the participants.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="section_heading">Technical Skills</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                 <div class="desc-inter">
+                    <h6><i class="fa-brands fa-python fa-1x"></i>   Python</h6>
+                   </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                 <div class="desc-inter">
+                    <h6><i class="fa-brands fa-dev fa-1x"></i>   Django</h6>
+                   </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                     <div class="desc-inter">
+                        <h6><i class="fa-solid fa-pepper-hot fa-1x"></i>   Flask</h6>
+                    </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                 <div class="desc-inter">
+                    <h6><i class="fa-brands fa-css3-alt fa-1x"></i>   HTML/CSS</h6>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                 <div class="desc-inter">
+                    <h6><i class="fa-brands fa-js fa-1x"></i>   Javascript</h6>
+                   </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                 <div class="desc-inter">
+                    <h6><i class="fa-brands fa-react fa-1x"></i>   React</h6>
+                   </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                 <div class="desc-inter">
+                    <h6><i class="fa-solid fa-database fa-1x"></i>   SQL</h6>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                 <div class="desc-inter">
+                    <h6><i class="fa-brands fa-git-alt fa-1x"></i>   GIT Version Control</h6>
+                   </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<div class="section_heading">Soft Skills</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                 <div class="desc-inter">
+                    <h6>Communication</h6>
+                   </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                 <div class="desc-inter">
+                    <h6>Analytical Ability</h6>
+                   </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                     <div class="desc-inter">
+                    <h6>Project Management</h6>
+                   </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-sm-6">
+            <div class="inter-icon">
+                 <div class="desc-inter">
+                    <h6>Leadership</h6>
+                   </div>
+            </div>
+        </div>
+    
+    
+{% endblock %}

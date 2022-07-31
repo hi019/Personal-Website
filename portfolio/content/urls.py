@@ -22,5 +22,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path("projects", views.projects, name="projects"),
     path("resume", views.resume, name="resume"),
-    path("about_me", views.about_me, name="about_me"),
+    path("contact_me", views.contact_me, name="contact_me"),
 ]

@@ -7,13 +7,12 @@ from pyparsing import opAssoc
 
 
 def index(request):
-    return render(request, "content/layout.html")
+    return render(request, "content/index.html")
 
 def projects(request):
-    return HttpResponse("Projects")
+    return render(request, "content/projects.html")
 
 def resume(request):
-    return HttpResponse("Resume")
-
-def about_me(request):
-    return HttpResponse("About Me")
+    return render(request, "content/resume.html")
+def contact_me(request):
+     return render(request, "content/contact.html")
