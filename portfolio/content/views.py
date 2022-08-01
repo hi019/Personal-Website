@@ -1,9 +1,10 @@
 from django.http import HttpRequest
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib import admin
 from pyparsing import opAssoc
+from django.core.mail import send_mail, BadHeaderError
 
 
 def index(request):
@@ -14,5 +15,6 @@ def projects(request):
 
 def resume(request):
     return render(request, "content/resume.html")
+
 def contact_me(request):
      return render(request, "content/contact.html")
