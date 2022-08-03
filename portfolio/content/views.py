@@ -36,8 +36,12 @@ def contact_me(request):
             name = form.cleaned_data["name"]
             email = form.cleaned_data["email"]
             Subscriber(name=name, email=email).save()
-            return HttpResponseRedirect(reverse("contact_me"))
+            return render(request, "content/contact.html", {
+            "form": EmailForm,
+            "success": True
+        })
         else: 
             return render(request, "content/contact.html", {
             "form": form,
+            "success": False
         })

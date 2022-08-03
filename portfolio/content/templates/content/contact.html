@@ -3,6 +3,17 @@
 
 
 {% block body %}
+{% if success == True %}
+<div class="alert alert-primary" role="alert">
+    Succesfully subscribed!
+</div>
+{% endif %}
+
+{% if success == False %}
+{<div class="alert alert-danger" role="alert">
+    Subscription process failed. Try again!
+  </div>
+{% endif %}
 <section class="container">
     <div class="section_heading">Connect With Me Through...</div>
     <div class="social-left">
