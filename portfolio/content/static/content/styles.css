@@ -1,10 +1,12 @@
 :root {
     --gray: #28242c;
-    --red: #F5576C;
+    --blue: #1c6ca1;
 }
 
 * { 
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
@@ -27,7 +29,7 @@
     content: '';
     position: absolute;
     width: 3px;
-    background-color: #8e154f;
+    background-color: #1c6ca1;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -62,27 +64,7 @@
     left: 50%;
     }
     
-    .left-4::before {
-    content: " ";
-    position: absolute;
-    top: 18px;
-    z-index: 1;
-    right: 30px;
-    border: medium solid rgba(37, 117, 252, 1);
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent rgb(252, 37, 37);
-    }
-    
-    .right-4::before {
-    content: " ";
-    position: absolute;
-    top: 18px;
-    z-index: 1;
-    left: 30px;
-    border: medium solid rgba(245, 87, 108, 1);
-    border-width: 10px 10px 10px 0;
-    border-color: transparent var(--red) transparent transparent;
-    }
+  
     
     .right-4::after {
     left: -14px;
@@ -141,7 +123,7 @@
     
     background: -webkit-linear-gradient(to right, rgb(83, 0, 173), var(--red));
     
-    background: linear-gradient(to right, rgb(209, 29, 29), var(--gray));
+    background: linear-gradient(to right, rgb(13,66,102), var(--gray));
     opacity: 85%;
     -moz-transition: opacity 1s; /* Firefox */
     -webkit-transition: opacity 1s; /* Safari and Chrome */
@@ -154,7 +136,7 @@
     
     background: -webkit-linear-gradient(to left, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
     
-    background: linear-gradient(to left, rgb(209, 29, 29), var(--gray));
+    background: linear-gradient(to left, rgb(13,66,102), var(--gray));
     opacity: 85%;
     -moz-transition: opacity 2s; /* Firefox */
     -webkit-transition: opacity 1s; /* Safari and Chrome */
@@ -213,11 +195,11 @@ justify-content: center;
 }
 
 .desc-inter i {
-    color: red;
+    color: var(--blue);
 }
 
 .socials {
-    color: red;
+    color: var(--blue);
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -227,7 +209,7 @@ justify-content: center;
     
     background: -webkit-linear-gradient(to right, rgb(83, 0, 173), rgb(199, 18, 133));
     
-    background: linear-gradient(to right, rgb(179, 20, 20), rgb(0, 0, 0));
+    background: linear-gradient(to right, rgb(13,66,102), rgb(0, 0, 0));
 
     margin-top: 50px;
     margin-bottom: 50px;
@@ -244,7 +226,7 @@ justify-content: center;
     
     background: -webkit-linear-gradient(to right, rgb(83, 0, 173), rgb(199, 18, 133));
     
-    background: linear-gradient(to left, rgb(209, 29, 29), rgb(0, 0, 0));
+    background: linear-gradient(to left, rgb(13,66,102), rgb(0, 0, 0));
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
@@ -313,7 +295,7 @@ justify-content: center;
     
     background: -webkit-linear-gradient(to right, rgb(83, 0, 173), rgb(199, 18, 133));
     
-    background: linear-gradient(to right, rgb(179, 20, 20), rgb(0, 0, 0));
+    background: linear-gradient(to right, rgb(13,66,102), rgb(0, 0, 0));
 
     margin-top: 50px;
     margin-bottom: 50px;
@@ -322,7 +304,7 @@ justify-content: center;
     border-style: double;
     border-color: var(--gray);
     border-width: 5px;
-    border-radius: 15px 50px; 
+    border-radius: 15px; 
    
 }
 
@@ -332,13 +314,13 @@ justify-content: center;
     
     background: -webkit-linear-gradient(to right, rgb(83, 0, 173), rgb(199, 18, 133));
     
-    background: linear-gradient(to left, rgb(209, 29, 29), rgb(0, 0, 0));
+    background: linear-gradient(to left, rgb(13,66,102), rgb(0, 0, 0));
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
     border-color: var(--gray);
     border-width: 5px;
-    border-radius: 50px 15px; 
+    border-radius: 15px; 
 }
 
 .type_heading {
@@ -385,9 +367,7 @@ justify-content: center;
 .project-description {
     margin-right: 10px;
     padding: 10px;
-    background-color: var(--gray);
     margin-bottom: 10px;
-    border-style: double;
 }
 
   .menu {
@@ -409,5 +389,6 @@ justify-content: center;
     transition: 0.2s ease color;
     cursor: pointer;
   }
+
 
 

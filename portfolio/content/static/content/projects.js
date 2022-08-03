@@ -10,7 +10,7 @@ function show_all() {
     const otherhighlightedItems = document.querySelectorAll(".display-select");
     otherhighlightedItems.forEach(function(project) {
     if (project.id === "all"){
-        project.style.borderBottom="3px solid red";        
+        project.style.borderBottom="3px solid blue";        
     } else {
         project.style.borderBottom="none";        
         project.style.textDecoration = "none";
@@ -30,7 +30,7 @@ function show_web() {
     const otherhighlightedItems = document.querySelectorAll(".display-select");
     otherhighlightedItems.forEach(function(project) {
     if (project.id === "web"){
-        project.style.borderBottom="3px solid red";        
+        project.style.borderBottom="3px solid blue";        
     } else {
         project.style.borderBottom="none";        
         project.style.textDecoration = "none";
@@ -50,7 +50,7 @@ function show_python() {
     const otherhighlightedItems = document.querySelectorAll(".display-select");
     otherhighlightedItems.forEach(function(project) {
     if (project.id === "python"){
-        project.style.borderBottom="3px solid red";        
+        project.style.borderBottom="3px solid blue";        
     } else {
         project.style.borderBottom="none";        
         project.style.textDecoration = "none";
