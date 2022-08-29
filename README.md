@@ -20,13 +20,6 @@ content/urls.py - contains urls
 
 ---
 ## How To Run
-* $python3 manage.py makemigrations 
-* $python3 manage.py migrate
-* $python3 manage.py runserver
-
----
-## Additional Information
-For CS50: 
-* Thank you for making such a fantastic course. I am a Grade 12 student from Toronto and I am going to university next month. With my knowledge, projects (like this portfolio website) and passion for coding which I've developed over the course of this program, I have been able to land a position as a junior front end developer before even stepping foot into my first lecture!
-* Also, if you are able to provide any feedback on this portfolio, please do so - my email: amaanjaved2004@gmail.com
-* Thanks again!
+* $ python3 manage.py makemigrations 
+* $ python3 manage.py migrate
+* $ python3 manage.py runserver
